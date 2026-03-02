@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+@theme {
+  /* Breakpoints (Ekran Boyutları) */
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --breakpoint-xl: 1440px;
+
+  /* Özel Renkler */
+  --color-strongy-cyan: hsl(171, 66%, 44%);
+  --color-light-blue: hsl(233, 100%, 69%);
+  --color-dark-grayis-blue: hsl(210, 10%, 33%);
+  --color-grayish-blue: hsl(201, 11%, 66%);
+
+  /* Font Ailesi */
+  --font-sans: "Josefin-sans", sans-serif;
+  --font-alata: "Alata";
+}
+
+#hero {
+    background-image: url('../images/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width: 576px){
+    #hero{
+        background-image: url('../images/mobile/image-hero.jpg');
+        background-position: center;
+    }
+}
